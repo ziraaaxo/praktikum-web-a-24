@@ -4,120 +4,185 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Catynesia — Donasi & Adopsi Kucing Online</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Header -->
-  <header>
-    <div>
-      <h1>Catynesia</h1>
-      <p>Komunitas Donasi & Adopsi Kucing online di Seluruh Indonesia</p>
-      <nav aria-label="Navigasi utama">
-        <ul>
-          <li><a href="#about">Tentang</a></li>
-          <li><a href="#adopt">Adopsi</a></li>
-          <li><a href="#donate">Donasi</a></li>
-          <li><a href="#contact">Kontak</a></li>
-        </ul>
-      </nav>
-    </div>
+  <header class="header">
+    <h1>Catynesia</h1>
+    <p>Platform Komunitas Donasi & Adopsi Kucing Online di Seluruh Indonesia</p>
+    <nav class="navbar" aria-label="Navigasi utama">
+      <ul>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#features">Fitur</a></li>
+        <li><a href="#adopt">Adopsi</a></li>
+        <li><a href="#donate">Donasi</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </nav>
   </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Satu Klik untuk Selamatkan Hidup Kucing</h2>
+    <p>Bergabunglah bersama ribuan pecinta kucing di Indonesia</p>
+    <a href="#adopt" class="btn btn-primary">Mulai Adopsi</a>
+    <a href="#donate" class="btn btn-secondary">Berdonasi</a>
+  </section>
 
   <main>
     <!-- Tentang -->
-    <section id="about" aria-labelledby="about-heading">
-      <h2 id="about-heading">Tentang Catynesia</h2>
-      <p>Catynesia adalah platform online yang memfasilitasi proses adopsi kucing jalanan dan pengumpulan donasi untuk perawatan, vaksinasi, dan sterilisasi yang berbasis di Samarinda, Kalimantan Timur.</p>
+    <section id="about" class="section">
+      <h2>Tentang Catynesia</h2>
+      <p>
+        Catynesia adalah wadah komunitas untuk menyatukan pecinta kucing di seluruh Indonesia.
+        Kami membantu kucing jalanan menemukan rumah baru melalui program adopsi,
+        serta menggalang donasi untuk biaya kesehatan, vaksinasi, dan sterilisasi.
+      </p>
+    </section>
+
+    <!-- Fitur -->
+    <section id="features" class="section grid-features">
+      <article class="card">
+        <h3>Adopsi Kucing</h3>
+        <p>Temukan sahabat baru dengan mudah melalui sistem adopsi online.</p>
+      </article>
+      <article class="card">
+        <h3>Donasi</h3>
+        <p>Bantu kami membiayai perawatan kucing yang membutuhkan bantuan.</p>
+      </article>
+      <article class="card">
+        <h3>Relawan</h3>
+        <p>Ikut serta dalam kegiatan penyelamatan dan edukasi tentang kucing.</p>
+      </article>
     </section>
 
     <!-- Kucing yang Tersedia -->
-    <section id="adopt" aria-labelledby="adopt-heading">
-      <h2 id="adopt-heading">Kucing Siap Adopsi</h2>
+    <section id="adopt" class="section">
+      <h2>Kucing Siap Adopsi</h2>
+      <div class="grid-cats">
+        <article class="card">
+          <img src="Udin.jpg" alt="Udin">
+          <h3>Udin</h3>
+          <p>Jenis: Kampung, Usia: 8 bulan</p>
+          <p>Karakter: Lucu, aktif</p>
+          <p>Lokasi: Samarinda Kota</p>
+          <a href="#contact" class="btn btn-primary">Ajukan Adopsi</a>
+        </article>
 
-      <img src="Udin.jpg" alt="Udin" width="300px" height="300px">
-      <article aria-labelledby="cat1-title">
-        <h3 id="cat1-title">Udin</h3>
-        <p>Jenis: Kampung, Usia: 8 Bulan — Karakteristik: lucu</p>
-        <p>Lokasi: Samarinda Kota</p>
-        <p><a href="#contact" aria-describedby="adopt-instructions">Ajukan adopsi</a></p>
-      </article>
+        <article class="card">
+          <img src="Uti.jpg" alt="Uti">
+          <h3>Uti</h3>
+          <p>Jenis: Kampung, Usia: 1.5 tahun</p>
+          <p>Karakter: Suka bermain</p>
+          <p>Lokasi: Loa Janan</p>
+          <a href="#contact" class="btn btn-primary">Ajukan Adopsi</a>
+        </article>
 
-      <img src="Uti.jpg" alt="Uti" width="300px" height="300px">
-      <article aria-labelledby="cat2-title">
-        <h3 id="cat2-title">Uti</h3>
-        <p>Jenis: Kampung, Usia: 1.5 tahun — Karakteristik: suka bermain</p>
-        <p>Lokasi: Loa Janan</p>
-        <p><a href="#contact" aria-describedby="adopt-instructions">Ajukan adopsi</a></p>
-      </article>
-
-      <img src="Budi.jpg" alt="Budi" width="300px" height="300px">
-      <article aria-labelledby="cat3-title">
-        <h3 id="cat3-title">Budi</h3>
-        <p>Jenis: Kampung, Usia: 1 tahun — Karakteristik: pendiam</p>
-        <p>Lokasi: Samarinda Ulu</p>
-        <p><a href="#contact" aria-describedby="adopt-instructions">Ajukan adopsi</a></p>
-      </article>
+        <article class="card">
+          <img src="Budi.jpg" alt="Budi">
+          <h3>Budi</h3>
+          <p>Jenis: Kampung, Usia: 1 tahun</p>
+          <p>Karakter: Tenang</p>
+          <p>Lokasi: Samarinda Ulu</p>
+          <a href="#contact" class="btn btn-primary">Ajukan Adopsi</a>
+        </article>
+      </div>
     </section>
 
     <!-- Donasi -->
-    <section id="donate" aria-labelledby="donate-heading">
-      <h2 id="donate-heading">Donasi</h2>
-      <p>Dana yang anda berikan akan digunakan untuk perawatan kesehatan, vaksin, dan sterilisasi kucing-kucing komunitas.</p>
-      <form aria-label="Form donasi">
+    <section id="donate" class="section">
+      <h2>Donasi</h2>
+      <p>
+        Donasi yang kamu berikan akan digunakan untuk perawatan kesehatan, vaksinasi, dan sterilisasi kucing-kucing komunitas.
+      </p>
+      <form class="donation-form">
         <label for="donor-name">Nama</label>
-        <input id="donor-name" name="donor-name" type="text" />
+        <input id="donor-name" name="donor-name" type="text" required>
 
         <label for="donation-amount">Jumlah Donasi (IDR)</label>
-        <input id="donation-amount" name="donation-amount" type="number" min="0" />
+        <input id="donation-amount" name="donation-amount" type="number" min="10000" required>
 
-        <label for="donation-note">Catatan (opsional)</label>
-        <textarea id="donation-note" name="donation-note"></textarea>
-
-        <button type="submit">Donasi Sekarang</button>
+        <button type="submit" class="btn btn-primary">Donasi Sekarang</button>
       </form>
     </section>
 
+    <!-- Testimoni -->
+    <section id="testimonials" class="section">
+      <h2>Testimoni</h2>
+      <div class="grid-features">
+        <blockquote class="card">
+          <p>"Saya mengadopsi kucing lewat Catynesia, sekarang dia jadi teman setia keluarga kami hehe."</p>
+          <cite>- Rina, Jakarta</cite>
+        </blockquote>
+        <blockquote class="card">
+          <p>"Donasi saya membantu banyak kucing mendapatkan vaksinasi dan hidup lebih sehat."</p>
+          <cite>- Andi, Bandung</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <h2>FAQ</h2>
+      <details>
+        <summary>Apakah adopsi kucing di platform Catynesia berbayar?</summary>
+        <p>Tidak, adopsi gratis. Namun adopter disarankan untuk menanggung biaya vaksin/steril.</p>
+      </details>
+      <details>
+        <summary>Bagaimana cara berdonasi?</summary>
+        <p>Cukup isi form donasi di atas dengan nama dan jumlah yang ingin didonasikan.</p>
+      </details>
+      <details>
+        <summary>Apakah Catynesia hanya tersedia di kota tertentu?</summary>
+        <p>Tidak, Catynesia beroperasi secara online dan menjangkau seluruh Indonesia.</p>
+      </details>
+    </section>
+
+    <!-- Aside: Tips Merawat Kucing -->
+    <aside class="section">
+      <h2>Tips Merawat Kucing</h2>
+      <ul class="tips">
+      <li><strong>Pakan Bergizi:</strong> Berikan makanan khusus kucing, jangan makanan manusia yang berbahaya (seperti coklat atau bawang).</li>
+      <li><strong>Air Bersih:</strong> Pastikan kucing selalu punya akses ke air minum yang segar.</li>
+      <li><strong>Kesehatan:</strong> Vaksinasi dan periksa rutin ke dokter hewan.</li>
+      <li><strong>Kebersihan:</strong> Sediakan litter box yang bersih dan ganti pasir secara rutin.</li>
+      <li><strong>Sterilisasi:</strong> Steril/KB untuk mengendalikan populasi kucing jalanan.</li>
+      <li><strong>Kasih Sayang:</strong> Luangkan waktu bermain agar kucing sehat secara fisik dan mental.</li>
+    </ul>
+  </aside>
+
+
     <!-- Kontak -->
-    <section id="contact" aria-labelledby="contact-heading">
-      <h2 id="contact-heading">Kontak & Ajukan Adopsi</h2>
-      <p id="adopt-instructions">Isi form dibawah ini jika ingin bertanya atau mengajukan adopsi.</p>
-      <form aria-label="Form kontak">
+    <section id="contact" class="section">
+      <h2>Kontak</h2>
+      <form class="contact-form">
         <label for="contact-name">Nama Lengkap</label>
-        <input id="contact-name" name="contact-name" type="text" required />
+        <input id="contact-name" name="contact-name" type="text" required>
 
         <label for="contact-email">Email</label>
-        <input id="contact-email" name="contact-email" type="email" required />
-
-        <label for="contact-phone">Nomor Telepon</label>
-        <input id="contact-phone" name="contact-phone" type="tel" />
-
-        <label for="contact-cat">Kucing yang anda tertarik</label>
-        <input id="contact-cat" name="contact-cat" type="cat" />
+        <input id="contact-email" name="contact-email" type="email" required>
 
         <label for="contact-message">Pesan</label>
         <textarea id="contact-message" name="contact-message" rows="5"></textarea>
 
-        <button type="submit">Kirim</button>
+        <button type="submit" class="btn btn-primary">Kirim</button>
       </form>
     </section>
   </main>
 
-  <!-- Footer, link referensi -->
-  <footer>
-    <section>
-      <h2>Informasi</h2>
-      <p>Alamat: Samarinda, Kalimantan Timur — Indonesia</p>
-      <p>Email: headoffice@catynesia.online</p>
-    </section>
-
-    <section>
-      <h2>Referensi Desain & Web</h2>
-      <ul>
-        <li><a href="https://dribbble.com/">Dribbble — inspirasi UI/UX</a></li>
-        <li><a href="https://theabbycatdaddy.ca/">The Abby Cat Daddy - inspirasi utama</a></li>
-      </ul>
-    </section>
-
-    <p>&copy; <span id="year">2025</span> Catynesia — Komunitas Donasi & Adopsi Kucing Online</p>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Catynesia — Komunitas Donasi & Adopsi Kucing Online</p>
+    <p>Ikuti kami di:
+      <a href="#">Instagram</a> |
+      <a href="#">Twitter</a>
+    </p>
+    <p>Referensi desain:
+      <a href="https://dribbble.com/tags/animal_adoption">Dribbble</a>, 
+      <a href="https://theabbycatdaddy.ca/">The Abby Cat Daddy</a>
+    </p>
   </footer>
 </body>
 </html>
