@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+// kalau belum login, arahkan ke login.php
+if (!isset($_SESSION['username'])) {
+  header("Location: login.php");
+  exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -21,6 +31,16 @@
         <li><a href="#contact">Kontak</a></li>
       </ul>
     </nav>
+
+        <!-- TOMBOL LOGIN/LOGOUT -->
+    <div style="margin-top: 1rem;">
+      <?php if (isset($_SESSION['username'])): ?>
+        <a href="dashboard.php" class="btn btn-secondary">Dashboard</a>
+        <a href="logout.php" class="btn btn-primary">Logout</a>
+      <?php else: ?>
+        <a href="login.php" class="btn btn-primary">Login</a>
+      <?php endif; ?>
+    </div>
     <button id="darkToggle" class="btn btn-secondary">🌙 Dark Mode</button>
   </header>
 
